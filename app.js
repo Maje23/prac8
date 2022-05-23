@@ -12,8 +12,8 @@ var dbConnection = mysql.createPool({
   host: "127.0.0.1",
   database: "sakila",
   user: "root",
-  password: "root",
-  debug: true,
+  password: "",
+  // debug: true,
 });
 dbConnection.on("connection", function (connection) {
   console.log("DB Connection established");
