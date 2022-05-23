@@ -1,0 +1,1 @@
+select distinct a.address from inventory i left join film f on i.film_id = f.film_id left join store s on s.store_id = i.store_id left join address a on a.address_id = s.address_id where f.title = 'TWISTED PIRATES';
