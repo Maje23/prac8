@@ -11,9 +11,6 @@ var usersRouter = require("./routes/users");
 var dbConnection = mysql.createPool({
   host: "127.0.0.1",
   database: "sakila",
-  user: "root",
-  password: "",
-  // debug: true,
 });
 dbConnection.on("connection", function (connection) {
   console.log("DB Connection established");
